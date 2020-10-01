@@ -23,5 +23,10 @@
   "homepage": "https://github.com/mavedev/react-css-modules-psh#readme",
   "devDependencies": {
     "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.49",
+    "@types/react-css-modules": "^4.6.2",
+    "react-css-modules": "^4.7.11"
   }
 }
