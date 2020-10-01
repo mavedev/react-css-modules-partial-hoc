@@ -6,8 +6,8 @@ export type CSSModuleClassnames = {
 };
 
 /** Partial application for CSS module HOC accepting the module itself. */
-const withCSSModulePartiallyApplied = (styles: CSSModuleClassnames) => {
-  return (Component: React.Component<any>) => withCSSModule(Component, styles);
+const withCSSModulePartiallyApplied = <Props>(styles: CSSModuleClassnames) => {
+  return (Component: React.FC<Props>) => withCSSModule(Component, styles);
 };
 
 export default withCSSModulePartiallyApplied;
