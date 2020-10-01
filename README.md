@@ -17,8 +17,8 @@ You can also pass the result of the function to Redux compose function:
 ```typescript
 export default compose<React.Component<OwnProps>>(
   // ...,
-  withStyles(styles),
-  connect(mapStateToProps, mapDispatchToProps)
+  connect(mapStateToProps, mapDispatchToProps),
+  withStyles(styles) // Need to be the first one.
 )(Component);
 ```
 That only works for functional components.
