@@ -2,14 +2,15 @@
   "name": "react-css-modules-psh",
   "version": "1.0.0",
   "description": "Partially applied styles higher-order component for react-css-modules",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mavedev/react-css-modules-psh.git"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "keywords": [
     "react",
     "react-css-modules",
@@ -28,5 +29,11 @@
     "@types/react": "^16.9.49",
     "@types/react-css-modules": "^4.6.2",
     "react-css-modules": "^4.7.11"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   }
 }
